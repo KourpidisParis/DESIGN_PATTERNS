@@ -1,5 +1,6 @@
 using System;
 using DesignPatterns.Creational.FactoryPattern;
+using DesignPatterns.Creational.AbstractFactoryPattern;
 
 namespace DesignPatterns
 {
@@ -25,6 +26,10 @@ namespace DesignPatterns
                 {
                     case "factory":
                         FactoryPattern.Run();
+                        break;
+
+                    case "abstract-factory":
+                        AbstractFactoryPattern.Run();
                         break;
 
                     case "list":
@@ -55,9 +60,10 @@ namespace DesignPatterns
         {
             Console.WriteLine("Usage: dotnet run <pattern-name>");
             Console.WriteLine("\nAvailable commands:");
-            Console.WriteLine("  dotnet run factory     - Run Factory Pattern demo");
-            Console.WriteLine("  dotnet run list        - List all available patterns");
-            Console.WriteLine("  dotnet run help        - Show this help message");
+            Console.WriteLine("  dotnet run factory          - Run Factory Pattern demo");
+            Console.WriteLine("  dotnet run abstract-factory - Run Abstract Factory Pattern demo");
+            Console.WriteLine("  dotnet run list             - List all available patterns");
+            Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
             Console.WriteLine("  dotnet run factory");
         }
@@ -68,10 +74,10 @@ namespace DesignPatterns
             
             Console.WriteLine("Creational Patterns:");
             Console.WriteLine("  ✓ factory          - Factory Pattern (Vehicle creation example)");
+            Console.WriteLine("  ✓ abstract-factory - Abstract Factory Pattern (Furniture families example)");
             Console.WriteLine("  ⏳ singleton       - Coming soon...");
             Console.WriteLine("  ⏳ builder         - Coming soon...");
             Console.WriteLine("  ⏳ prototype       - Coming soon...");
-            Console.WriteLine("  ⏳ abstract-factory - Coming soon...");
             
             Console.WriteLine("\nStructural Patterns:");
             Console.WriteLine("  ⏳ adapter         - Coming soon...");

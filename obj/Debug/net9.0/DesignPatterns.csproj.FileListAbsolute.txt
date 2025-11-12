@@ -12,3 +12,4 @@ C:\Users\kourpidis\Desktop\DesignPatterns\obj\Debug\net9.0\refint\DesignPatterns
 C:\Users\kourpidis\Desktop\DesignPatterns\obj\Debug\net9.0\DesignPatterns.pdb
 C:\Users\kourpidis\Desktop\DesignPatterns\obj\Debug\net9.0\DesignPatterns.genruntimeconfig.cache
 C:\Users\kourpidis\Desktop\DesignPatterns\obj\Debug\net9.0\ref\DesignPatterns.dll
+C:\Users\kourpidis\Desktop\DesignPatterns\obj\Debug\net9.0\DesignPatterns.sourcelink.json
