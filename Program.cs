@@ -2,6 +2,7 @@ using System;
 using DesignPatterns.Creational.FactoryPattern;
 using DesignPatterns.Creational.AbstractFactoryPattern;
 using DesignPatterns.Creational.BuilderPattern;
+using DesignPatterns.Creational.PrototypePattern;
 
 namespace DesignPatterns
 {
@@ -37,6 +38,10 @@ namespace DesignPatterns
                         BuilderPattern.Run();
                         break;
 
+                    case "prototype":
+                        PrototypePattern.Run();
+                        break;
+
                     case "list":
                         ListPatterns();
                         break;
@@ -68,6 +73,7 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run factory          - Run Factory Pattern demo");
             Console.WriteLine("  dotnet run abstract-factory - Run Abstract Factory Pattern demo");
             Console.WriteLine("  dotnet run builder          - Run Builder Pattern demo");
+            Console.WriteLine("  dotnet run prototype        - Run Prototype Pattern demo");
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -82,8 +88,8 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ factory          - Factory Pattern (Vehicle creation example)");
             Console.WriteLine("  ✓ abstract-factory - Abstract Factory Pattern (Furniture families example)");
             Console.WriteLine("  ✓ builder          - Builder Pattern (Computer construction example)");
+            Console.WriteLine("  ✓ prototype        - Prototype Pattern (Document cloning example)");
             Console.WriteLine("  ⏳ singleton       - Coming soon...");
-            Console.WriteLine("  ⏳ prototype       - Coming soon...");
             
             Console.WriteLine("\nStructural Patterns:");
             Console.WriteLine("  ⏳ adapter         - Coming soon...");
