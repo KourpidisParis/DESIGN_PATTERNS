@@ -4,6 +4,7 @@ using DesignPatterns.Creational.AbstractFactoryPattern;
 using DesignPatterns.Creational.BuilderPattern;
 using DesignPatterns.Creational.PrototypePattern;
 using DesignPatterns.Creational.SingletonPattern;
+using DesignPatterns.Structural.AdapterPattern;
 
 namespace DesignPatterns
 {
@@ -47,6 +48,10 @@ namespace DesignPatterns
                         SingletonPattern.Run();
                         break;
 
+                    case "adapter":
+                        Adapter.Run();
+                        break;
+
                     case "list":
                         ListPatterns();
                         break;
@@ -80,6 +85,7 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run builder          - Run Builder Pattern demo");
             Console.WriteLine("  dotnet run prototype        - Run Prototype Pattern demo");
             Console.WriteLine("  dotnet run singleton        - Run Singleton Pattern demo");
+            Console.WriteLine("  dotnet run adapter          - Run Adapter Pattern demo");
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -98,7 +104,7 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ singleton        - Singleton Pattern (Database connection example)");
             
             Console.WriteLine("\nStructural Patterns:");
-            Console.WriteLine("  ⏳ adapter         - Coming soon...");
+            Console.WriteLine("  ✓ adapter         - Adapter Pattern (Payment system example)");
             Console.WriteLine("  ⏳ bridge          - Coming soon...");
             Console.WriteLine("  ⏳ composite       - Coming soon...");
             Console.WriteLine("  ⏳ decorator       - Coming soon...");
