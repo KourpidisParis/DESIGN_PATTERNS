@@ -5,6 +5,8 @@ using DesignPatterns.Creational.BuilderPattern;
 using DesignPatterns.Creational.PrototypePattern;
 using DesignPatterns.Creational.SingletonPattern;
 using DesignPatterns.Structural.AdapterPattern;
+using DesignPatterns.Structural.BridgePattern;
+
 
 namespace DesignPatterns
 {
@@ -51,6 +53,9 @@ namespace DesignPatterns
                     case "adapter":
                         Adapter.Run();
                         break;
+                    case "bridge":
+                        Bridge.Run();
+                        break;
 
                     case "list":
                         ListPatterns();
@@ -86,6 +91,7 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run prototype        - Run Prototype Pattern demo");
             Console.WriteLine("  dotnet run singleton        - Run Singleton Pattern demo");
             Console.WriteLine("  dotnet run adapter          - Run Adapter Pattern demo");
+            Console.WriteLine("  dotnet run bridge           - Run Bridge Pattern demo");
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -105,7 +111,7 @@ namespace DesignPatterns
             
             Console.WriteLine("\nStructural Patterns:");
             Console.WriteLine("  ✓ adapter         - Adapter Pattern (Payment system example)");
-            Console.WriteLine("  ⏳ bridge          - Coming soon...");
+            Console.WriteLine("  ✓ bridge          - Bridge Pattern (Messaging system example)");
             Console.WriteLine("  ⏳ composite       - Coming soon...");
             Console.WriteLine("  ⏳ decorator       - Coming soon...");
             Console.WriteLine("  ⏳ facade          - Coming soon...");
