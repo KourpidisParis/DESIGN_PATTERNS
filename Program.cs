@@ -8,7 +8,7 @@ using DesignPatterns.Structural.AdapterPattern;
 using DesignPatterns.Structural.BridgePattern;
 using DesignPatterns.Structural.CompositePattern;
 using DesignPatterns.Structural.DecoratorPattern;
-
+using DesignPatterns.Structural.FacadePattern;
 
 namespace DesignPatterns
 {
@@ -68,6 +68,10 @@ namespace DesignPatterns
                         Decorator.Run();
                         break; 
 
+                    case "facade":
+                        Facade.Run();
+                        break; 
+
                     case "list":
                         ListPatterns();
                         break;
@@ -105,6 +109,7 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run bridge           - Run Bridge Pattern demo");
             Console.WriteLine("  dotnet run composite        - Run Composite Pattern demo");
             Console.WriteLine("  dotnet run decorator        - Run Decorator Pattern demo");
+            Console.WriteLine("  dotnet run facade           - Run Facade Pattern demo");
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -127,7 +132,7 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ bridge          - Bridge Pattern (Messaging system example)");
             Console.WriteLine("  ✓ composite       - Composite Pattern (File system example)");
             Console.WriteLine("  ✓ decorator       - Decorator Pattern (Coffee example)");
-            Console.WriteLine("  ⏳ facade         - Coming soon...");
+            Console.WriteLine("  ✓ facade          - Facade Pattern (Home Cinema example)");
             Console.WriteLine("  ⏳ flyweight      - Coming soon...");
             Console.WriteLine("  ⏳ proxy          - Coming soon...");
             
