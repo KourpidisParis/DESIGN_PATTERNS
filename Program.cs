@@ -10,6 +10,8 @@ using DesignPatterns.Structural.CompositePattern;
 using DesignPatterns.Structural.DecoratorPattern;
 using DesignPatterns.Structural.FacadePattern;
 using DesignPatterns.Structural.FlyweightPattern;
+using DesignPatterns.Structural.ProxyPattern;
+
 
 namespace DesignPatterns
 {
@@ -80,6 +82,9 @@ namespace DesignPatterns
                     case "list":
                         ListPatterns();
                         break;
+                    case "proxy":
+                        Proxy.Run();
+                        break;
 
                     case "help":
                     case "-h":
@@ -116,6 +121,7 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run decorator        - Run Decorator Pattern demo");
             Console.WriteLine("  dotnet run facade           - Run Facade Pattern demo");
             Console.WriteLine("  dotnet run flyweight        - Run Flyweight Pattern demo");
+            Console.WriteLine("  dotnet run proxy            - Run Proxy Pattern demo");
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -140,8 +146,7 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ decorator       - Decorator Pattern (Coffee example)");
             Console.WriteLine("  ✓ facade          - Facade Pattern (Home Cinema example)");
             Console.WriteLine("  ✓ flyweight       - Flyweight Pattern (Forest example)");
-            Console.WriteLine("  ⏳ flyweight      - Coming soon...");
-            Console.WriteLine("  ⏳ proxy          - Coming soon...");
+            Console.WriteLine("  ✓ proxy           - Proxy Pattern (Internet example)");
             
             Console.WriteLine("\nBehavioral Patterns:");
             Console.WriteLine("  ⏳ observer        - Coming soon...");
