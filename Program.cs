@@ -11,7 +11,7 @@ using DesignPatterns.Structural.DecoratorPattern;
 using DesignPatterns.Structural.FacadePattern;
 using DesignPatterns.Structural.FlyweightPattern;
 using DesignPatterns.Structural.ProxyPattern;
-
+using DesignPatterns.Behavioral.ChainOfResponsibilityPattern;
 
 namespace DesignPatterns
 {
@@ -85,7 +85,9 @@ namespace DesignPatterns
                     case "proxy":
                         Proxy.Run();
                         break;
-
+                    case "chain-of-resp":
+                        ChainOfResponsibility.Run();
+                        break;
                     case "help":
                     case "-h":
                     case "--help":
@@ -122,6 +124,7 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run facade           - Run Facade Pattern demo");
             Console.WriteLine("  dotnet run flyweight        - Run Flyweight Pattern demo");
             Console.WriteLine("  dotnet run proxy            - Run Proxy Pattern demo");
+            Console.WriteLine("  dotnet run chain-of-resp    - Run Chain of Responsibility Pattern demo");
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -149,13 +152,13 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ proxy           - Proxy Pattern (Internet example)");
             
             Console.WriteLine("\nBehavioral Patterns:");
+            Console.WriteLine("  ✓ chain-of-resp    - Chain of Responsibility (Support system example) ");
             Console.WriteLine("  ⏳ observer        - Coming soon...");
             Console.WriteLine("  ⏳ strategy        - Coming soon...");
             Console.WriteLine("  ⏳ command         - Coming soon...");
             Console.WriteLine("  ⏳ iterator        - Coming soon...");
             Console.WriteLine("  ⏳ state           - Coming soon...");
             Console.WriteLine("  ⏳ template-method - Coming soon...");
-            Console.WriteLine("  ⏳ chain-of-resp   - Coming soon...");
         }
     }
 }
