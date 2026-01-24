@@ -14,7 +14,7 @@ using DesignPatterns.Structural.ProxyPattern;
 using DesignPatterns.Behavioral.ChainOfResponsibilityPattern;
 using DesignPatterns.Behavioral.CommandPattern;
 using DesignPatterns.Behavioral.IteratorPattern;
-
+using DesignPatterns.Behavioral.MediatorPattern;
 
 namespace DesignPatterns
 {
@@ -80,23 +80,32 @@ namespace DesignPatterns
 
                     case "flyweight":
                         Flyweight.Run();
-                        break;     
+                        break; 
+
                     case "iterator":
                         Iterator.Run();
-                        break;        
+                        break;          
 
                     case "list":
                         ListPatterns();
                         break;
+
                     case "proxy":
                         Proxy.Run();
                         break;
+
                     case "chain-of-resp":
                         ChainOfResponsibility.Run();
                         break;
+
                     case "command":
                         Command.Run();
                         break;
+
+                    case "mediator":
+                        Mediator.Run();
+                        break; 
+
                     case "help":
                     case "-h":
                     case "--help":
@@ -136,6 +145,7 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run chain-of-resp    - Run Chain of Responsibility Pattern demo");
             Console.WriteLine("  dotnet run command          - Run Command Pattern demo");
             Console.WriteLine("  dotnet run iterator         - Run Iterator Pattern demo");
+            Console.WriteLine("  dotnet run mediator         - Run Mediator Pattern demo");
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -166,6 +176,7 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ chain-of-resp    - Chain of Responsibility (Support system example) ");
             Console.WriteLine("  ✓ command          - Command (Light device example)");
             Console.WriteLine("  ✓ iterator         - Iterator (Book Collection Example)");
+            Console.WriteLine("  ✓ mediator         - Mediator (Chat Room example)");
             Console.WriteLine("  ⏳ observer        - Coming soon...");
             Console.WriteLine("  ⏳ strategy        - Coming soon...");
             Console.WriteLine("  ⏳ state           - Coming soon...");
