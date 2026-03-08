@@ -15,6 +15,8 @@ using DesignPatterns.Behavioral.ChainOfResponsibilityPattern;
 using DesignPatterns.Behavioral.CommandPattern;
 using DesignPatterns.Behavioral.IteratorPattern;
 using DesignPatterns.Behavioral.MediatorPattern;
+using DesignPatterns.Behavioral.MementoPattern;
+
 
 namespace DesignPatterns
 {
@@ -84,7 +86,11 @@ namespace DesignPatterns
 
                     case "iterator":
                         Iterator.Run();
-                        break;          
+                        break;
+
+                    case "memento":
+                        Memento.Run();
+                        break;            
 
                     case "list":
                         ListPatterns();
@@ -146,6 +152,7 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run command          - Run Command Pattern demo");
             Console.WriteLine("  dotnet run iterator         - Run Iterator Pattern demo");
             Console.WriteLine("  dotnet run mediator         - Run Mediator Pattern demo");
+            Console.WriteLine("  dotnet run memento          - Run Memento Pattern demo");            
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -177,6 +184,7 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ command          - Command (Light device example)");
             Console.WriteLine("  ✓ iterator         - Iterator (Book Collection Example)");
             Console.WriteLine("  ✓ mediator         - Mediator (Chat Room example)");
+            Console.WriteLine("  ✓ memento          - Memento (Text Editor example)");
             Console.WriteLine("  ⏳ observer        - Coming soon...");
             Console.WriteLine("  ⏳ strategy        - Coming soon...");
             Console.WriteLine("  ⏳ state           - Coming soon...");
