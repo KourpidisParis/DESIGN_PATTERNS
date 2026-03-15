@@ -16,6 +16,7 @@ using DesignPatterns.Behavioral.CommandPattern;
 using DesignPatterns.Behavioral.IteratorPattern;
 using DesignPatterns.Behavioral.MediatorPattern;
 using DesignPatterns.Behavioral.MementoPattern;
+using DesignPatterns.Behavioral.ObserverPattern;
 
 
 namespace DesignPatterns
@@ -90,11 +91,11 @@ namespace DesignPatterns
 
                     case "memento":
                         Memento.Run();
-                        break;            
+                        break;         
 
-                    case "list":
-                        ListPatterns();
-                        break;
+                    case "observer":
+                        Observer.Run();
+                        break;           
 
                     case "proxy":
                         Proxy.Run();
@@ -112,6 +113,10 @@ namespace DesignPatterns
                         Mediator.Run();
                         break; 
 
+                    case "list":
+                        ListPatterns();
+                        break;
+                        
                     case "help":
                     case "-h":
                     case "--help":
@@ -152,7 +157,8 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run command          - Run Command Pattern demo");
             Console.WriteLine("  dotnet run iterator         - Run Iterator Pattern demo");
             Console.WriteLine("  dotnet run mediator         - Run Mediator Pattern demo");
-            Console.WriteLine("  dotnet run memento          - Run Memento Pattern demo");            
+            Console.WriteLine("  dotnet run memento          - Run Memento Pattern demo");     
+            Console.WriteLine("  dotnet run observer         - Run Observer Pattern demo");                   
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -185,7 +191,7 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ iterator         - Iterator (Book Collection Example)");
             Console.WriteLine("  ✓ mediator         - Mediator (Chat Room example)");
             Console.WriteLine("  ✓ memento          - Memento (Text Editor example)");
-            Console.WriteLine("  ⏳ observer        - Coming soon...");
+            Console.WriteLine("  ✓ observer         - Observer Pattern (YouTube example)");
             Console.WriteLine("  ⏳ strategy        - Coming soon...");
             Console.WriteLine("  ⏳ state           - Coming soon...");
             Console.WriteLine("  ⏳ template-method - Coming soon...");
