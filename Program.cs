@@ -17,6 +17,8 @@ using DesignPatterns.Behavioral.IteratorPattern;
 using DesignPatterns.Behavioral.MediatorPattern;
 using DesignPatterns.Behavioral.MementoPattern;
 using DesignPatterns.Behavioral.ObserverPattern;
+using DesignPatterns.Behavioral.StatePattern;
+
 
 
 namespace DesignPatterns
@@ -95,7 +97,11 @@ namespace DesignPatterns
 
                     case "observer":
                         Observer.Run();
-                        break;           
+                        break;    
+
+                    case "state":
+                        State.Run();
+                        break;      
 
                     case "proxy":
                         Proxy.Run();
@@ -158,7 +164,8 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run iterator         - Run Iterator Pattern demo");
             Console.WriteLine("  dotnet run mediator         - Run Mediator Pattern demo");
             Console.WriteLine("  dotnet run memento          - Run Memento Pattern demo");     
-            Console.WriteLine("  dotnet run observer         - Run Observer Pattern demo");                   
+            Console.WriteLine("  dotnet run observer         - Run Observer Pattern demo");
+            Console.WriteLine("  dotnet run state            - Run State Pattern demo");                                      
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -192,8 +199,8 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ mediator         - Mediator (Chat Room example)");
             Console.WriteLine("  ✓ memento          - Memento (Text Editor example)");
             Console.WriteLine("  ✓ observer         - Observer Pattern (YouTube example)");
+            Console.WriteLine("  ✓ state            - State Pattern (Vending Machine example)");
             Console.WriteLine("  ⏳ strategy        - Coming soon...");
-            Console.WriteLine("  ⏳ state           - Coming soon...");
             Console.WriteLine("  ⏳ template-method - Coming soon...");
         }
     }
