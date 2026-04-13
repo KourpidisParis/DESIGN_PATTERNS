@@ -63,6 +63,7 @@ IPaymentStrategy (Interface)
 Cart doesn't know which strategy it's using - it just calls the interface method.
 
 ## Project Structure
+```
 StrategyPattern/
 │
 ├── 📄 IPaymentStrategy.cs        ← Strategy interface
@@ -75,6 +76,7 @@ StrategyPattern/
 │
 ├── 📄 Strategy.cs                ← Demo program
 └── 📄 README.md                  ← This file
+```
 
 ## When to Use
 
