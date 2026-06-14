@@ -20,8 +20,7 @@ using DesignPatterns.Behavioral.ObserverPattern;
 using DesignPatterns.Behavioral.StatePattern;
 using DesignPatterns.Behavioral.StrategyPattern;
 using DesignPatterns.Behavioral.TemplateMethodPattern;
-
-
+using DesignPatterns.Behavioral.VisitorPattern;
 
 
 namespace DesignPatterns
@@ -128,8 +127,11 @@ namespace DesignPatterns
 
                     case "template":
                         TemplateMethod.Run();
-                        break;                                 
+                        break;   
 
+                    case "visitor":
+                        Visitor.Run();
+                        break;   
                     case "list":
                         ListPatterns();
                         break;
@@ -178,7 +180,8 @@ namespace DesignPatterns
             Console.WriteLine("  dotnet run observer         - Run Observer Pattern demo");
             Console.WriteLine("  dotnet run state            - Run State Pattern demo");
             Console.WriteLine("  dotnet run strategy         - Run Strategy Pattern demo");
-            Console.WriteLine("  dotnet run template         - Run Template Method pattern demo");                                                                                                                                                        
+            Console.WriteLine("  dotnet run template         - Run Template Method pattern demo");     
+            Console.WriteLine("  dotnet run visitor          - Run Visitor pattern demo");                                                                                                                                                                                                                                                                                                           
             Console.WriteLine("  dotnet run list             - List all available patterns");
             Console.WriteLine("  dotnet run help             - Show this help message");
             Console.WriteLine("\nExample:");
@@ -215,7 +218,7 @@ namespace DesignPatterns
             Console.WriteLine("  ✓ state            - State Pattern (Vending Machine example)");
             Console.WriteLine("  ✓ strategy         - Strategy Pattern (Payment exapmle)");
             Console.WriteLine("  ✓ template         - Template Method Pattern (Beverage exapmle)");
-            Console.WriteLine("  ⏳ template-method - Coming soon...");
+            Console.WriteLine("  ✓ visitor          - Visitor Pattern (Shopping cart exapmle)");
         }
     }
 }
